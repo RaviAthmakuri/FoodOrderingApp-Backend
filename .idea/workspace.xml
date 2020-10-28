@@ -130,23 +130,9 @@
       <command value="mvn clean install -Psetup -DskipTests" />
     </option>
   </component>
-  <component name="RunManager" selected="Application.FoodOrderingAppApiApplication">
+  <component name="RunManager" selected="JUnit.CustomerControllerTest.shouldNotLogoutIfSessionIsExpired">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FoodOrderingAppApiApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.upgrad.FoodOrderingApp.api.FoodOrderingAppApiApplication" />
-      <module name="FoodOrderingApp-api" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.upgrad.FoodOrderingApp.api.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -157,23 +143,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CategoryControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="FoodOrderingApp-api" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.upgrad.FoodOrderingApp.api.controller.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.upgrad.FoodOrderingApp.api.controller" />
-      <option name="MAIN_CLASS_NAME" value="com.upgrad.FoodOrderingApp.api.controller.CategoryControllerTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CustomerControllerTest.shouldSignUpForValidRequest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CustomerControllerTest.shouldLogoutForValidRequest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="FoodOrderingApp-api" />
       <extension name="coverage">
         <pattern>
@@ -183,14 +153,14 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.upgrad.FoodOrderingApp.api.controller" />
       <option name="MAIN_CLASS_NAME" value="com.upgrad.FoodOrderingApp.api.controller.CustomerControllerTest" />
-      <option name="METHOD_NAME" value="shouldSignUpForValidRequest" />
+      <option name="METHOD_NAME" value="shouldLogoutForValidRequest" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OrderControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CustomerControllerTest.shouldNotLoginForWrongPassword" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="FoodOrderingApp-api" />
       <extension name="coverage">
         <pattern>
@@ -199,14 +169,15 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.upgrad.FoodOrderingApp.api.controller" />
-      <option name="MAIN_CLASS_NAME" value="com.upgrad.FoodOrderingApp.api.controller.OrderControllerTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="MAIN_CLASS_NAME" value="com.upgrad.FoodOrderingApp.api.controller.CustomerControllerTest" />
+      <option name="METHOD_NAME" value="shouldNotLoginForWrongPassword" />
+      <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RestaurantControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CustomerControllerTest.shouldNotLogoutIfCustomerIsAlreadyLoggedOut" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="FoodOrderingApp-api" />
       <extension name="coverage">
         <pattern>
@@ -215,8 +186,43 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.upgrad.FoodOrderingApp.api.controller" />
-      <option name="MAIN_CLASS_NAME" value="com.upgrad.FoodOrderingApp.api.controller.RestaurantControllerTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="MAIN_CLASS_NAME" value="com.upgrad.FoodOrderingApp.api.controller.CustomerControllerTest" />
+      <option name="METHOD_NAME" value="shouldNotLogoutIfCustomerIsAlreadyLoggedOut" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CustomerControllerTest.shouldNotLogoutIfSessionIsExpired" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="FoodOrderingApp-api" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.upgrad.FoodOrderingApp.api.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.upgrad.FoodOrderingApp.api.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.upgrad.FoodOrderingApp.api.controller.CustomerControllerTest" />
+      <option name="METHOD_NAME" value="shouldNotLogoutIfSessionIsExpired" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CustomerControllerTest.shouldNotLogoutWhenCustomerIsNotLoggedIn" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="FoodOrderingApp-api" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.upgrad.FoodOrderingApp.api.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.upgrad.FoodOrderingApp.api.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.upgrad.FoodOrderingApp.api.controller.CustomerControllerTest" />
+      <option name="METHOD_NAME" value="shouldNotLogoutWhenCustomerIsNotLoggedIn" />
+      <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -249,11 +255,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.FoodOrderingAppApiApplication" />
-        <item itemvalue="JUnit.CustomerControllerTest.shouldSignUpForValidRequest" />
-        <item itemvalue="JUnit.CategoryControllerTest" />
-        <item itemvalue="JUnit.OrderControllerTest" />
-        <item itemvalue="JUnit.RestaurantControllerTest" />
+        <item itemvalue="JUnit.CustomerControllerTest.shouldNotLogoutIfSessionIsExpired" />
+        <item itemvalue="JUnit.CustomerControllerTest.shouldNotLogoutIfCustomerIsAlreadyLoggedOut" />
+        <item itemvalue="JUnit.CustomerControllerTest.shouldNotLogoutWhenCustomerIsNotLoggedIn" />
+        <item itemvalue="JUnit.CustomerControllerTest.shouldLogoutForValidRequest" />
+        <item itemvalue="JUnit.CustomerControllerTest.shouldNotLoginForWrongPassword" />
       </list>
     </recent_temporary>
   </component>
@@ -287,7 +293,7 @@
       <workItem from="1542258014778" duration="187590000" />
       <workItem from="1543492206993" duration="13152000" />
       <workItem from="1545232696710" duration="1008000" />
-      <workItem from="1603737051539" duration="4884000" />
+      <workItem from="1603737051539" duration="13865000" />
     </task>
     <servers />
   </component>
@@ -302,46 +308,54 @@
       <screen x="1366" y="-189" width="1920" height="1040" />
     </state>
     <state x="1918" y="-10" key="#Project_Structure/1366.-189.1920.1040/0.0.1366.728@1366.-189.1920.1040" timestamp="1603737725051" />
-    <state x="2131" y="16" key="#com.intellij.ide.util.MemberChooser" timestamp="1603739680296">
+    <state x="2131" y="16" key="#com.intellij.ide.util.MemberChooser" timestamp="1603911642921">
       <screen x="1366" y="-189" width="1920" height="1040" />
     </state>
-    <state x="2131" y="16" key="#com.intellij.ide.util.MemberChooser/1366.-189.1920.1040/0.0.1366.728@1366.-189.1920.1040" timestamp="1603739680296" />
+    <state x="2131" y="16" key="#com.intellij.ide.util.MemberChooser/1366.-189.1920.1040/0.0.1366.728@1366.-189.1920.1040" timestamp="1603911642921" />
     <state x="2055" y="108" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1603739253153">
       <screen x="1366" y="-189" width="1920" height="1040" />
     </state>
     <state x="2055" y="108" key="#com.intellij.ide.util.PackageChooserDialog/1366.-189.1920.1040/0.0.1366.728@1366.-189.1920.1040" timestamp="1603739253153" />
-    <state width="1877" height="523" key="GridCell.Tab.0.bottom" timestamp="1603741976365">
+    <state x="2105" y="73" key="FileChooserDialogImpl" timestamp="1603907054093">
       <screen x="1366" y="-189" width="1920" height="1040" />
     </state>
-    <state width="1877" height="523" key="GridCell.Tab.0.bottom/1366.-189.1920.1040/0.0.1366.728@1366.-189.1920.1040" timestamp="1603741976365" />
-    <state width="1877" height="523" key="GridCell.Tab.0.center" timestamp="1603741976365">
+    <state x="2105" y="73" key="FileChooserDialogImpl/1366.-189.1920.1040/0.0.1366.728@1366.-189.1920.1040" timestamp="1603907054093" />
+    <state width="1877" height="523" key="GridCell.Tab.0.bottom" timestamp="1603915864262">
       <screen x="1366" y="-189" width="1920" height="1040" />
     </state>
-    <state width="1877" height="523" key="GridCell.Tab.0.center/1366.-189.1920.1040/0.0.1366.728@1366.-189.1920.1040" timestamp="1603741976365" />
-    <state width="1877" height="523" key="GridCell.Tab.0.left" timestamp="1603741976364">
+    <state width="1877" height="523" key="GridCell.Tab.0.bottom/1366.-189.1920.1040/0.0.1366.728@1366.-189.1920.1040" timestamp="1603915864262" />
+    <state width="1877" height="523" key="GridCell.Tab.0.center" timestamp="1603915864262">
       <screen x="1366" y="-189" width="1920" height="1040" />
     </state>
-    <state width="1877" height="523" key="GridCell.Tab.0.left/1366.-189.1920.1040/0.0.1366.728@1366.-189.1920.1040" timestamp="1603741976364" />
-    <state width="1877" height="523" key="GridCell.Tab.0.right" timestamp="1603741976365">
+    <state width="1877" height="523" key="GridCell.Tab.0.center/1366.-189.1920.1040/0.0.1366.728@1366.-189.1920.1040" timestamp="1603915864262" />
+    <state width="1877" height="523" key="GridCell.Tab.0.left" timestamp="1603915864262">
       <screen x="1366" y="-189" width="1920" height="1040" />
     </state>
-    <state width="1877" height="523" key="GridCell.Tab.0.right/1366.-189.1920.1040/0.0.1366.728@1366.-189.1920.1040" timestamp="1603741976365" />
-    <state width="1877" height="339" key="GridCell.Tab.1.bottom" timestamp="1603741911282">
+    <state width="1877" height="523" key="GridCell.Tab.0.left/1366.-189.1920.1040/0.0.1366.728@1366.-189.1920.1040" timestamp="1603915864262" />
+    <state width="1877" height="523" key="GridCell.Tab.0.right" timestamp="1603915864262">
       <screen x="1366" y="-189" width="1920" height="1040" />
     </state>
-    <state width="1877" height="339" key="GridCell.Tab.1.bottom/1366.-189.1920.1040/0.0.1366.728@1366.-189.1920.1040" timestamp="1603741911282" />
-    <state width="1877" height="339" key="GridCell.Tab.1.center" timestamp="1603741911282">
+    <state width="1877" height="523" key="GridCell.Tab.0.right/1366.-189.1920.1040/0.0.1366.728@1366.-189.1920.1040" timestamp="1603915864262" />
+    <state width="1877" height="339" key="GridCell.Tab.1.bottom" timestamp="1603915594611">
       <screen x="1366" y="-189" width="1920" height="1040" />
     </state>
-    <state width="1877" height="339" key="GridCell.Tab.1.center/1366.-189.1920.1040/0.0.1366.728@1366.-189.1920.1040" timestamp="1603741911282" />
-    <state width="1877" height="339" key="GridCell.Tab.1.left" timestamp="1603741911282">
+    <state width="1877" height="339" key="GridCell.Tab.1.bottom/1366.-189.1920.1040/0.0.1366.728@1366.-189.1920.1040" timestamp="1603915594611" />
+    <state width="1877" height="339" key="GridCell.Tab.1.center" timestamp="1603915594611">
       <screen x="1366" y="-189" width="1920" height="1040" />
     </state>
-    <state width="1877" height="339" key="GridCell.Tab.1.left/1366.-189.1920.1040/0.0.1366.728@1366.-189.1920.1040" timestamp="1603741911282" />
-    <state width="1877" height="339" key="GridCell.Tab.1.right" timestamp="1603741911282">
+    <state width="1877" height="339" key="GridCell.Tab.1.center/1366.-189.1920.1040/0.0.1366.728@1366.-189.1920.1040" timestamp="1603915594611" />
+    <state width="1877" height="339" key="GridCell.Tab.1.left" timestamp="1603915594611">
       <screen x="1366" y="-189" width="1920" height="1040" />
     </state>
-    <state width="1877" height="339" key="GridCell.Tab.1.right/1366.-189.1920.1040/0.0.1366.728@1366.-189.1920.1040" timestamp="1603741911282" />
+    <state width="1877" height="339" key="GridCell.Tab.1.left/1366.-189.1920.1040/0.0.1366.728@1366.-189.1920.1040" timestamp="1603915594611" />
+    <state width="1877" height="339" key="GridCell.Tab.1.right" timestamp="1603915594611">
+      <screen x="1366" y="-189" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="339" key="GridCell.Tab.1.right/1366.-189.1920.1040/0.0.1366.728@1366.-189.1920.1040" timestamp="1603915594611" />
+    <state x="1708" y="-48" key="new project wizard" timestamp="1603907062494">
+      <screen x="1366" y="-189" width="1920" height="1040" />
+    </state>
+    <state x="1708" y="-48" key="new project wizard/1366.-189.1920.1040/0.0.1366.728@1366.-189.1920.1040" timestamp="1603907062494" />
     <state x="1982" y="146" width="672" height="677" key="run.anything.popup" timestamp="1603738017892">
       <screen x="1366" y="-189" width="1920" height="1040" />
     </state>
@@ -351,9 +365,14 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/FoodOrderingApp-api/src/test/java/com/upgrad/FoodOrderingApp/api/controller/CustomerControllerTest.java</url>
+          <line>157</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/FoodOrderingApp-api/src/main/java/com/upgrad/FoodOrderingApp/api/controller/CustomerController.java</url>
-          <line>30</line>
-          <option name="timeStamp" value="4" />
+          <line>103</line>
+          <option name="timeStamp" value="17" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

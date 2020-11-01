@@ -3,11 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="2187793b-e64d-48fa-93dc-77d9c32a3738" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FoodOrderingApp-api/src/main/java/com/upgrad/FoodOrderingApp/api/controller/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/FoodOrderingApp-api/src/main/java/com/upgrad/FoodOrderingApp/api/controller/CustomerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FoodOrderingApp-api/src/main/java/com/upgrad/FoodOrderingApp/api/exception/ExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/FoodOrderingApp-api/src/main/java/com/upgrad/FoodOrderingApp/api/exception/ExceptionHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FoodOrderingApp-api/src/test/java/com/upgrad/FoodOrderingApp/api/controller/CustomerControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/FoodOrderingApp-api/src/test/java/com/upgrad/FoodOrderingApp/api/controller/CustomerControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FoodOrderingApp-service/src/main/java/com/upgrad/FoodOrderingApp/service/businness/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/FoodOrderingApp-service/src/main/java/com/upgrad/FoodOrderingApp/service/businness/CustomerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FoodOrderingApp-service/src/main/java/com/upgrad/FoodOrderingApp/service/dao/CustomerDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/FoodOrderingApp-service/src/main/java/com/upgrad/FoodOrderingApp/service/dao/CustomerDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FoodOrderingApp-api/src/main/java/com/upgrad/FoodOrderingApp/api/exception/ExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/FoodOrderingApp-api/src/main/java/com/upgrad/FoodOrderingApp/api/exception/CustomExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FoodOrderingApp-api/src/test/java/com/upgrad/FoodOrderingApp/api/controller/AddressControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/FoodOrderingApp-api/src/test/java/com/upgrad/FoodOrderingApp/api/controller/AddressControllerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,7 +99,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550834160886" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/FoodOrderingApp-api/src/main/java/com/upgrad/FoodOrderingApp/api/controller" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Cosas/QuoraAPI" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Test" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
@@ -137,7 +134,7 @@
       <command value="mvn clean install -Psetup -DskipTests" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.CustomerControllerTest">
+  <component name="RunManager" selected="JUnit.AddressControllerTest.shouldNotGetAllAddressesWithExpiredSessionUser">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
@@ -150,7 +147,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CustomerControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AddressControllerTest.shouldGetAllAddresses" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="FoodOrderingApp-api" />
       <extension name="coverage">
         <pattern>
@@ -159,31 +156,15 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.upgrad.FoodOrderingApp.api.controller" />
-      <option name="MAIN_CLASS_NAME" value="com.upgrad.FoodOrderingApp.api.controller.CustomerControllerTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CustomerControllerTest.shouldNotUpdateCustomerPasswordIfNewPasswordDoesNotFollowRecommendedPasswordFormat" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="FoodOrderingApp-api" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.upgrad.FoodOrderingApp.api.controller.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.upgrad.FoodOrderingApp.api.controller" />
-      <option name="MAIN_CLASS_NAME" value="com.upgrad.FoodOrderingApp.api.controller.CustomerControllerTest" />
-      <option name="METHOD_NAME" value="shouldNotUpdateCustomerPasswordIfNewPasswordDoesNotFollowRecommendedPasswordFormat" />
+      <option name="MAIN_CLASS_NAME" value="com.upgrad.FoodOrderingApp.api.controller.AddressControllerTest" />
+      <option name="METHOD_NAME" value="shouldGetAllAddresses" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CustomerControllerTest.shouldNotUpdateCustomerPasswordIfNewPasswordIsEmpty" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AddressControllerTest.shouldNotGetAllAddressesWithExpiredSessionUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="FoodOrderingApp-api" />
       <extension name="coverage">
         <pattern>
@@ -192,15 +173,15 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.upgrad.FoodOrderingApp.api.controller" />
-      <option name="MAIN_CLASS_NAME" value="com.upgrad.FoodOrderingApp.api.controller.CustomerControllerTest" />
-      <option name="METHOD_NAME" value="shouldNotUpdateCustomerPasswordIfNewPasswordIsEmpty" />
+      <option name="MAIN_CLASS_NAME" value="com.upgrad.FoodOrderingApp.api.controller.AddressControllerTest" />
+      <option name="METHOD_NAME" value="shouldNotGetAllAddressesWithExpiredSessionUser" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CustomerControllerTest.shouldNotUpdateCustomerPasswordIfOldPasswordIsEmpty" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AddressControllerTest.shouldNotGetAllAddressesWithNonExistingAccessToken" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="FoodOrderingApp-api" />
       <extension name="coverage">
         <pattern>
@@ -209,15 +190,15 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.upgrad.FoodOrderingApp.api.controller" />
-      <option name="MAIN_CLASS_NAME" value="com.upgrad.FoodOrderingApp.api.controller.CustomerControllerTest" />
-      <option name="METHOD_NAME" value="shouldNotUpdateCustomerPasswordIfOldPasswordIsEmpty" />
+      <option name="MAIN_CLASS_NAME" value="com.upgrad.FoodOrderingApp.api.controller.AddressControllerTest" />
+      <option name="METHOD_NAME" value="shouldNotGetAllAddressesWithNonExistingAccessToken" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CustomerControllerTest.shouldSignUpForValidRequest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AddressControllerTest.shouldNotGetAllAddressesWithSignedOutUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="FoodOrderingApp-api" />
       <extension name="coverage">
         <pattern>
@@ -226,8 +207,25 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.upgrad.FoodOrderingApp.api.controller" />
-      <option name="MAIN_CLASS_NAME" value="com.upgrad.FoodOrderingApp.api.controller.CustomerControllerTest" />
-      <option name="METHOD_NAME" value="shouldSignUpForValidRequest" />
+      <option name="MAIN_CLASS_NAME" value="com.upgrad.FoodOrderingApp.api.controller.AddressControllerTest" />
+      <option name="METHOD_NAME" value="shouldNotGetAllAddressesWithSignedOutUser" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AddressControllerTest.shouldNotSaveAddressWithEmptyWrongPinCode" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="FoodOrderingApp-api" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.upgrad.FoodOrderingApp.api.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.upgrad.FoodOrderingApp.api.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.upgrad.FoodOrderingApp.api.controller.AddressControllerTest" />
+      <option name="METHOD_NAME" value="shouldNotSaveAddressWithEmptyWrongPinCode" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
@@ -261,11 +259,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.CustomerControllerTest" />
-        <item itemvalue="JUnit.CustomerControllerTest.shouldSignUpForValidRequest" />
-        <item itemvalue="JUnit.CustomerControllerTest.shouldNotUpdateCustomerPasswordIfNewPasswordDoesNotFollowRecommendedPasswordFormat" />
-        <item itemvalue="JUnit.CustomerControllerTest.shouldNotUpdateCustomerPasswordIfNewPasswordIsEmpty" />
-        <item itemvalue="JUnit.CustomerControllerTest.shouldNotUpdateCustomerPasswordIfOldPasswordIsEmpty" />
+        <item itemvalue="JUnit.AddressControllerTest.shouldNotGetAllAddressesWithExpiredSessionUser" />
+        <item itemvalue="JUnit.AddressControllerTest.shouldNotGetAllAddressesWithSignedOutUser" />
+        <item itemvalue="JUnit.AddressControllerTest.shouldNotGetAllAddressesWithNonExistingAccessToken" />
+        <item itemvalue="JUnit.AddressControllerTest.shouldGetAllAddresses" />
+        <item itemvalue="JUnit.AddressControllerTest.shouldNotSaveAddressWithEmptyWrongPinCode" />
       </list>
     </recent_temporary>
   </component>
@@ -301,7 +299,7 @@
       <workItem from="1545232696710" duration="1008000" />
       <workItem from="1603737051539" duration="14765000" />
       <workItem from="1604138929265" duration="2652000" />
-      <workItem from="1604143680165" duration="2465000" />
+      <workItem from="1604143680165" duration="10466000" />
     </task>
     <servers />
   </component>
@@ -320,50 +318,54 @@
       <screen x="1366" y="-189" width="1920" height="1040" />
     </state>
     <state x="1918" y="-10" key="#Project_Structure/1366.-189.1920.1040/0.0.1366.728@1366.-189.1920.1040" timestamp="1603737725051" />
-    <state x="2131" y="16" key="#com.intellij.ide.util.MemberChooser" timestamp="1603911642921">
+    <state x="1458" y="-97" width="1736" height="856" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1604209808076">
       <screen x="1366" y="-189" width="1920" height="1040" />
     </state>
-    <state x="2131" y="16" key="#com.intellij.ide.util.MemberChooser/1366.-189.1920.1040/0.0.1366.728@1366.-189.1920.1040" timestamp="1603911642921" />
+    <state x="1458" y="-97" width="1736" height="856" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/1366.-189.1920.1040/0.0.1366.728@1366.-189.1920.1040" timestamp="1604209808076" />
+    <state x="2131" y="16" key="#com.intellij.ide.util.MemberChooser" timestamp="1604207490327">
+      <screen x="1366" y="-189" width="1920" height="1040" />
+    </state>
+    <state x="2131" y="16" key="#com.intellij.ide.util.MemberChooser/1366.-189.1920.1040/0.0.1366.728@1366.-189.1920.1040" timestamp="1604207490327" />
     <state x="2055" y="108" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1603739253153">
       <screen x="1366" y="-189" width="1920" height="1040" />
     </state>
     <state x="2055" y="108" key="#com.intellij.ide.util.PackageChooserDialog/1366.-189.1920.1040/0.0.1366.728@1366.-189.1920.1040" timestamp="1603739253153" />
-    <state x="2105" y="73" key="FileChooserDialogImpl" timestamp="1604139086735">
+    <state x="2105" y="73" key="FileChooserDialogImpl" timestamp="1604208150386">
       <screen x="1366" y="-189" width="1920" height="1040" />
     </state>
-    <state x="2105" y="73" key="FileChooserDialogImpl/1366.-189.1920.1040/0.0.1366.728@1366.-189.1920.1040" timestamp="1604139086735" />
-    <state width="1877" height="523" key="GridCell.Tab.0.bottom" timestamp="1604146374539">
+    <state x="2105" y="73" key="FileChooserDialogImpl/1366.-189.1920.1040/0.0.1366.728@1366.-189.1920.1040" timestamp="1604208150386" />
+    <state width="1877" height="463" key="GridCell.Tab.0.bottom" timestamp="1604212790523">
       <screen x="1366" y="-189" width="1920" height="1040" />
     </state>
-    <state width="1877" height="523" key="GridCell.Tab.0.bottom/1366.-189.1920.1040/0.0.1366.728@1366.-189.1920.1040" timestamp="1604146374539" />
-    <state width="1877" height="523" key="GridCell.Tab.0.center" timestamp="1604146374539">
+    <state width="1877" height="463" key="GridCell.Tab.0.bottom/1366.-189.1920.1040/0.0.1366.728@1366.-189.1920.1040" timestamp="1604212790523" />
+    <state width="1877" height="463" key="GridCell.Tab.0.center" timestamp="1604212790523">
       <screen x="1366" y="-189" width="1920" height="1040" />
     </state>
-    <state width="1877" height="523" key="GridCell.Tab.0.center/1366.-189.1920.1040/0.0.1366.728@1366.-189.1920.1040" timestamp="1604146374539" />
-    <state width="1877" height="523" key="GridCell.Tab.0.left" timestamp="1604146374539">
+    <state width="1877" height="463" key="GridCell.Tab.0.center/1366.-189.1920.1040/0.0.1366.728@1366.-189.1920.1040" timestamp="1604212790523" />
+    <state width="1877" height="463" key="GridCell.Tab.0.left" timestamp="1604212790523">
       <screen x="1366" y="-189" width="1920" height="1040" />
     </state>
-    <state width="1877" height="523" key="GridCell.Tab.0.left/1366.-189.1920.1040/0.0.1366.728@1366.-189.1920.1040" timestamp="1604146374539" />
-    <state width="1877" height="523" key="GridCell.Tab.0.right" timestamp="1604146374539">
+    <state width="1877" height="463" key="GridCell.Tab.0.left/1366.-189.1920.1040/0.0.1366.728@1366.-189.1920.1040" timestamp="1604212790523" />
+    <state width="1877" height="463" key="GridCell.Tab.0.right" timestamp="1604212790523">
       <screen x="1366" y="-189" width="1920" height="1040" />
     </state>
-    <state width="1877" height="523" key="GridCell.Tab.0.right/1366.-189.1920.1040/0.0.1366.728@1366.-189.1920.1040" timestamp="1604146374539" />
-    <state width="1877" height="339" key="GridCell.Tab.1.bottom" timestamp="1604145215982">
+    <state width="1877" height="463" key="GridCell.Tab.0.right/1366.-189.1920.1040/0.0.1366.728@1366.-189.1920.1040" timestamp="1604212790523" />
+    <state width="1877" height="339" key="GridCell.Tab.1.bottom" timestamp="1604212750650">
       <screen x="1366" y="-189" width="1920" height="1040" />
     </state>
-    <state width="1877" height="339" key="GridCell.Tab.1.bottom/1366.-189.1920.1040/0.0.1366.728@1366.-189.1920.1040" timestamp="1604145215982" />
-    <state width="1877" height="339" key="GridCell.Tab.1.center" timestamp="1604145215981">
+    <state width="1877" height="339" key="GridCell.Tab.1.bottom/1366.-189.1920.1040/0.0.1366.728@1366.-189.1920.1040" timestamp="1604212750650" />
+    <state width="1877" height="339" key="GridCell.Tab.1.center" timestamp="1604212750649">
       <screen x="1366" y="-189" width="1920" height="1040" />
     </state>
-    <state width="1877" height="339" key="GridCell.Tab.1.center/1366.-189.1920.1040/0.0.1366.728@1366.-189.1920.1040" timestamp="1604145215981" />
-    <state width="1877" height="339" key="GridCell.Tab.1.left" timestamp="1604145215981">
+    <state width="1877" height="339" key="GridCell.Tab.1.center/1366.-189.1920.1040/0.0.1366.728@1366.-189.1920.1040" timestamp="1604212750649" />
+    <state width="1877" height="339" key="GridCell.Tab.1.left" timestamp="1604212750649">
       <screen x="1366" y="-189" width="1920" height="1040" />
     </state>
-    <state width="1877" height="339" key="GridCell.Tab.1.left/1366.-189.1920.1040/0.0.1366.728@1366.-189.1920.1040" timestamp="1604145215981" />
-    <state width="1877" height="339" key="GridCell.Tab.1.right" timestamp="1604145215982">
+    <state width="1877" height="339" key="GridCell.Tab.1.left/1366.-189.1920.1040/0.0.1366.728@1366.-189.1920.1040" timestamp="1604212750649" />
+    <state width="1877" height="339" key="GridCell.Tab.1.right" timestamp="1604212750649">
       <screen x="1366" y="-189" width="1920" height="1040" />
     </state>
-    <state width="1877" height="339" key="GridCell.Tab.1.right/1366.-189.1920.1040/0.0.1366.728@1366.-189.1920.1040" timestamp="1604145215982" />
+    <state width="1877" height="339" key="GridCell.Tab.1.right/1366.-189.1920.1040/0.0.1366.728@1366.-189.1920.1040" timestamp="1604212750649" />
     <state x="2022" y="156" key="com.intellij.ide.util.TipDialog" timestamp="1604143678197">
       <screen x="1366" y="-189" width="1920" height="1040" />
     </state>
@@ -393,6 +395,11 @@
           <url>file://$PROJECT_DIR$/FoodOrderingApp-service/src/main/java/com/upgrad/FoodOrderingApp/service/businness/CustomerService.java</url>
           <line>133</line>
           <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/FoodOrderingApp-api/src/main/java/com/upgrad/FoodOrderingApp/api/controller/AddressController.java</url>
+          <line>80</line>
+          <option name="timeStamp" value="18" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

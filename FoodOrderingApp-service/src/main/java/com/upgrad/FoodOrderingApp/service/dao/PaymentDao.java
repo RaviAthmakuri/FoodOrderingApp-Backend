@@ -11,13 +11,11 @@ import javax.persistence.PersistenceContext;
 import java.util.List;
 import java.util.UUID;
 
-
 @Repository
 public class PaymentDao {
 
     @PersistenceContext
     private EntityManager entityManager;
-
 
     public PaymentEntity getPaymentByUUID(String paymentId) {
         try{

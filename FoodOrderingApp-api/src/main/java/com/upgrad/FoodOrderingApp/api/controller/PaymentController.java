@@ -25,13 +25,10 @@ public class PaymentController {
     @Autowired
     PaymentService paymentService;
 
-
     @CrossOrigin
     @RequestMapping(method = RequestMethod.GET,path = "",produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
     public ResponseEntity<PaymentListResponse> getAllPaymentMethods (){
-
         List<PaymentEntity> paymentEntities = paymentService.getAllPaymentMethods();
-
         List<PaymentResponse> paymentResponses = new LinkedList<>();
         paymentEntities.forEach(paymentEntity -> {
             PaymentResponse paymentResponse = new PaymentResponse()
@@ -39,10 +36,8 @@ public class PaymentController {
                     .id(UUID.fromString(paymentEntity.getUuid()));
             paymentResponses.add(paymentResponse);
         });
-
         PaymentListResponse paymentListResponse = new PaymentListResponse()
                 .paymentMethods(paymentResponses);
         return new ResponseEntity<PaymentListResponse>(paymentListResponse, HttpStatus.OK);
-
     }
 }

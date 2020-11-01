@@ -5,6 +5,7 @@ import org.hibernate.annotations.OnDelete;
 import org.hibernate.annotations.OnDeleteAction;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 import java.util.List;
 
@@ -41,7 +42,7 @@ public class AddressEntity {
     private String pincode;
 
     @Column(name = "active")
-    @Size(max = 30)
+    @NotNull
     private Integer active;
 
     @ManyToOne
@@ -52,8 +53,8 @@ public class AddressEntity {
     @ManyToMany(fetch = FetchType.EAGER , cascade = CascadeType.ALL)
     @JoinTable(
             name = "customer_address",
-            joinColumns = {@JoinColumn(name = "customer_id")},
-            inverseJoinColumns = {@JoinColumn(name="address_id")}
+            joinColumns = {@JoinColumn(name = "address_id")},
+            inverseJoinColumns = {@JoinColumn(name="customer_id")}
     )
     private List<CustomerEntity> customerEntityList;
 

@@ -3,10 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="2187793b-e64d-48fa-93dc-77d9c32a3738" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FoodOrderingApp-service/src/main/java/com/upgrad/FoodOrderingApp/service/businness/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/FoodOrderingApp-service/src/main/java/com/upgrad/FoodOrderingApp/service/businness/CustomerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FoodOrderingApp-api/src/main/java/com/upgrad/FoodOrderingApp/api/controller/AddressController.java" beforeDir="false" afterPath="$PROJECT_DIR$/FoodOrderingApp-api/src/main/java/com/upgrad/FoodOrderingApp/api/controller/AddressController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FoodOrderingApp-service/src/main/java/com/upgrad/FoodOrderingApp/service/businness/AddressService.java" beforeDir="false" afterPath="$PROJECT_DIR$/FoodOrderingApp-service/src/main/java/com/upgrad/FoodOrderingApp/service/businness/AddressService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FoodOrderingApp-service/src/main/java/com/upgrad/FoodOrderingApp/service/entity/AddressEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/FoodOrderingApp-service/src/main/java/com/upgrad/FoodOrderingApp/service/entity/AddressEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FoodOrderingApp-service/src/main/java/com/upgrad/FoodOrderingApp/service/entity/CustomerAuthEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/FoodOrderingApp-service/src/main/java/com/upgrad/FoodOrderingApp/service/entity/CustomerAuthEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FoodOrderingApp-service/src/main/java/com/upgrad/FoodOrderingApp/service/entity/CustomerEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/FoodOrderingApp-service/src/main/java/com/upgrad/FoodOrderingApp/service/entity/CustomerEntity.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -297,7 +296,7 @@
       <workItem from="1545232696710" duration="1008000" />
       <workItem from="1603737051539" duration="14765000" />
       <workItem from="1604138929265" duration="2652000" />
-      <workItem from="1604143680165" duration="12784000" />
+      <workItem from="1604143680165" duration="14351000" />
     </task>
     <servers />
   </component>
@@ -332,54 +331,54 @@
       <screen x="1366" y="-189" width="1920" height="1040" />
     </state>
     <state x="2105" y="73" key="FileChooserDialogImpl/1366.-189.1920.1040/0.0.1366.728@1366.-189.1920.1040" timestamp="1604213143229" />
-    <state width="1877" height="327" key="GridCell.Tab.0.bottom" timestamp="1604215165438">
+    <state width="1877" height="508" key="GridCell.Tab.0.bottom" timestamp="1604219418313">
       <screen x="1366" y="-189" width="1920" height="1040" />
     </state>
-    <state width="1877" height="327" key="GridCell.Tab.0.bottom/1366.-189.1920.1040/0.0.1366.728@1366.-189.1920.1040" timestamp="1604215165438" />
-    <state width="1877" height="327" key="GridCell.Tab.0.center" timestamp="1604215165438">
+    <state width="1877" height="508" key="GridCell.Tab.0.bottom/1366.-189.1920.1040/0.0.1366.728@1366.-189.1920.1040" timestamp="1604219418313" />
+    <state width="1877" height="508" key="GridCell.Tab.0.center" timestamp="1604219418312">
       <screen x="1366" y="-189" width="1920" height="1040" />
     </state>
-    <state width="1877" height="327" key="GridCell.Tab.0.center/1366.-189.1920.1040/0.0.1366.728@1366.-189.1920.1040" timestamp="1604215165438" />
-    <state width="1877" height="327" key="GridCell.Tab.0.left" timestamp="1604215165438">
+    <state width="1877" height="508" key="GridCell.Tab.0.center/1366.-189.1920.1040/0.0.1366.728@1366.-189.1920.1040" timestamp="1604219418312" />
+    <state width="1877" height="508" key="GridCell.Tab.0.left" timestamp="1604219418312">
       <screen x="1366" y="-189" width="1920" height="1040" />
     </state>
-    <state width="1877" height="327" key="GridCell.Tab.0.left/1366.-189.1920.1040/0.0.1366.728@1366.-189.1920.1040" timestamp="1604215165438" />
-    <state width="1877" height="327" key="GridCell.Tab.0.right" timestamp="1604215165438">
+    <state width="1877" height="508" key="GridCell.Tab.0.left/1366.-189.1920.1040/0.0.1366.728@1366.-189.1920.1040" timestamp="1604219418312" />
+    <state width="1877" height="508" key="GridCell.Tab.0.right" timestamp="1604219418312">
       <screen x="1366" y="-189" width="1920" height="1040" />
     </state>
-    <state width="1877" height="327" key="GridCell.Tab.0.right/1366.-189.1920.1040/0.0.1366.728@1366.-189.1920.1040" timestamp="1604215165438" />
-    <state width="1877" height="327" key="GridCell.Tab.1.bottom" timestamp="1604215185806">
+    <state width="1877" height="508" key="GridCell.Tab.0.right/1366.-189.1920.1040/0.0.1366.728@1366.-189.1920.1040" timestamp="1604219418312" />
+    <state width="1877" height="508" key="GridCell.Tab.1.bottom" timestamp="1604219418313">
       <screen x="1366" y="-189" width="1920" height="1040" />
     </state>
-    <state width="1877" height="327" key="GridCell.Tab.1.bottom/1366.-189.1920.1040/0.0.1366.728@1366.-189.1920.1040" timestamp="1604215185806" />
-    <state width="1877" height="327" key="GridCell.Tab.1.center" timestamp="1604215185806">
+    <state width="1877" height="508" key="GridCell.Tab.1.bottom/1366.-189.1920.1040/0.0.1366.728@1366.-189.1920.1040" timestamp="1604219418313" />
+    <state width="1877" height="508" key="GridCell.Tab.1.center" timestamp="1604219418313">
       <screen x="1366" y="-189" width="1920" height="1040" />
     </state>
-    <state width="1877" height="327" key="GridCell.Tab.1.center/1366.-189.1920.1040/0.0.1366.728@1366.-189.1920.1040" timestamp="1604215185806" />
-    <state width="1877" height="327" key="GridCell.Tab.1.left" timestamp="1604215185806">
+    <state width="1877" height="508" key="GridCell.Tab.1.center/1366.-189.1920.1040/0.0.1366.728@1366.-189.1920.1040" timestamp="1604219418313" />
+    <state width="1877" height="508" key="GridCell.Tab.1.left" timestamp="1604219418313">
       <screen x="1366" y="-189" width="1920" height="1040" />
     </state>
-    <state width="1877" height="327" key="GridCell.Tab.1.left/1366.-189.1920.1040/0.0.1366.728@1366.-189.1920.1040" timestamp="1604215185806" />
-    <state width="1877" height="327" key="GridCell.Tab.1.right" timestamp="1604215185806">
+    <state width="1877" height="508" key="GridCell.Tab.1.left/1366.-189.1920.1040/0.0.1366.728@1366.-189.1920.1040" timestamp="1604219418313" />
+    <state width="1877" height="508" key="GridCell.Tab.1.right" timestamp="1604219418313">
       <screen x="1366" y="-189" width="1920" height="1040" />
     </state>
-    <state width="1877" height="327" key="GridCell.Tab.1.right/1366.-189.1920.1040/0.0.1366.728@1366.-189.1920.1040" timestamp="1604215185806" />
-    <state width="1877" height="327" key="GridCell.Tab.2.bottom" timestamp="1604215165178">
+    <state width="1877" height="508" key="GridCell.Tab.1.right/1366.-189.1920.1040/0.0.1366.728@1366.-189.1920.1040" timestamp="1604219418313" />
+    <state width="1877" height="508" key="GridCell.Tab.2.bottom" timestamp="1604219418314">
       <screen x="1366" y="-189" width="1920" height="1040" />
     </state>
-    <state width="1877" height="327" key="GridCell.Tab.2.bottom/1366.-189.1920.1040/0.0.1366.728@1366.-189.1920.1040" timestamp="1604215165178" />
-    <state width="1877" height="327" key="GridCell.Tab.2.center" timestamp="1604215165177">
+    <state width="1877" height="508" key="GridCell.Tab.2.bottom/1366.-189.1920.1040/0.0.1366.728@1366.-189.1920.1040" timestamp="1604219418314" />
+    <state width="1877" height="508" key="GridCell.Tab.2.center" timestamp="1604219418313">
       <screen x="1366" y="-189" width="1920" height="1040" />
     </state>
-    <state width="1877" height="327" key="GridCell.Tab.2.center/1366.-189.1920.1040/0.0.1366.728@1366.-189.1920.1040" timestamp="1604215165177" />
-    <state width="1877" height="327" key="GridCell.Tab.2.left" timestamp="1604215165177">
+    <state width="1877" height="508" key="GridCell.Tab.2.center/1366.-189.1920.1040/0.0.1366.728@1366.-189.1920.1040" timestamp="1604219418313" />
+    <state width="1877" height="508" key="GridCell.Tab.2.left" timestamp="1604219418313">
       <screen x="1366" y="-189" width="1920" height="1040" />
     </state>
-    <state width="1877" height="327" key="GridCell.Tab.2.left/1366.-189.1920.1040/0.0.1366.728@1366.-189.1920.1040" timestamp="1604215165177" />
-    <state width="1877" height="327" key="GridCell.Tab.2.right" timestamp="1604215165178">
+    <state width="1877" height="508" key="GridCell.Tab.2.left/1366.-189.1920.1040/0.0.1366.728@1366.-189.1920.1040" timestamp="1604219418313" />
+    <state width="1877" height="508" key="GridCell.Tab.2.right" timestamp="1604219418314">
       <screen x="1366" y="-189" width="1920" height="1040" />
     </state>
-    <state width="1877" height="327" key="GridCell.Tab.2.right/1366.-189.1920.1040/0.0.1366.728@1366.-189.1920.1040" timestamp="1604215165178" />
+    <state width="1877" height="508" key="GridCell.Tab.2.right/1366.-189.1920.1040/0.0.1366.728@1366.-189.1920.1040" timestamp="1604219418314" />
     <state x="2022" y="156" key="com.intellij.ide.util.TipDialog" timestamp="1604143678197">
       <screen x="1366" y="-189" width="1920" height="1040" />
     </state>
@@ -407,11 +406,6 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/FoodOrderingApp-service/src/main/java/com/upgrad/FoodOrderingApp/service/businness/CustomerService.java</url>
-          <line>126</line>
-          <option name="timeStamp" value="13" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/FoodOrderingApp-service/src/main/java/com/upgrad/FoodOrderingApp/service/businness/CustomerService.java</url>
           <line>88</line>
           <option name="timeStamp" value="22" />
         </line-breakpoint>
@@ -422,8 +416,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/FoodOrderingApp-api/src/main/java/com/upgrad/FoodOrderingApp/api/controller/AddressController.java</url>
-          <line>82</line>
+          <line>83</line>
           <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/FoodOrderingApp-api/src/main/java/com/upgrad/FoodOrderingApp/api/controller/AddressController.java</url>
+          <line>61</line>
+          <option name="timeStamp" value="26" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

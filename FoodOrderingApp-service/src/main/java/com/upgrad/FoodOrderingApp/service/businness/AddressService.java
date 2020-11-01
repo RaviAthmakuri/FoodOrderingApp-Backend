@@ -2,6 +2,7 @@ package com.upgrad.FoodOrderingApp.service.businness;
 
 import com.upgrad.FoodOrderingApp.service.dao.AddressDao;
 import com.upgrad.FoodOrderingApp.service.entity.AddressEntity;
+import com.upgrad.FoodOrderingApp.service.entity.CustomerEntity;
 import com.upgrad.FoodOrderingApp.service.entity.StateEntity;
 import com.upgrad.FoodOrderingApp.service.exception.AddressNotFoundException;
 import com.upgrad.FoodOrderingApp.service.exception.SaveAddressException;
@@ -9,6 +10,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -30,12 +32,14 @@ public class AddressService {
 
     }
 
-    public AddressEntity saveAddress(StateEntity stateEntity, AddressEntity addressEntity)
+    public AddressEntity saveAddress(CustomerEntity customerEntity, AddressEntity addressEntity)
             throws SaveAddressException {
         if(!isValidPinCode(addressEntity.getPincode())){
             throw new SaveAddressException("SAR-002","Invalid pincode");
         }
-        addressEntity.setStateEntity(stateEntity);
+        List<CustomerEntity> customerEntities = new ArrayList<>();
+        customerEntities.add(customerEntity);
+        addressEntity.setCustomerEntityList(customerEntities);
         return addressDAO.saveAddress(addressEntity);
 
     }

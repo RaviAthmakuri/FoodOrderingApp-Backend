@@ -1,7 +1,9 @@
 package com.upgrad.FoodOrderingApp.service.businness;
 
 import com.upgrad.FoodOrderingApp.service.dao.AddressDao;
+import com.upgrad.FoodOrderingApp.service.dao.CustomerAddressDao;
 import com.upgrad.FoodOrderingApp.service.entity.AddressEntity;
+import com.upgrad.FoodOrderingApp.service.entity.CustomerAddressEntity;
 import com.upgrad.FoodOrderingApp.service.entity.CustomerEntity;
 import com.upgrad.FoodOrderingApp.service.entity.StateEntity;
 import com.upgrad.FoodOrderingApp.service.exception.AddressNotFoundException;
@@ -23,6 +25,9 @@ public class AddressService {
     @Autowired
     AddressDao addressDAO;
 
+    @Autowired
+    CustomerAddressDao customerAddressDao;
+
 
     public StateEntity getStateByUUID(String stateUuid) throws AddressNotFoundException {
         StateEntity stateEntity = addressDAO.getStateByUuid(stateUuid);
@@ -30,6 +35,26 @@ public class AddressService {
             throw new AddressNotFoundException("ANF-002", "No state by this id");
         } else {
             return stateEntity;
+        }
+
+    }
+
+    public AddressEntity getAddressByUUID(String addressUuid,CustomerEntity customerEntity)throws AuthorizationFailedException,AddressNotFoundException{
+        if(addressUuid == null){
+            throw new AddressNotFoundException("ANF-005","Address id can not be empty");
+        }
+        AddressEntity addressEntity = addressDAO.getAddressByUuid(addressUuid);
+        if (addressEntity == null){//Checking if null throws corresponding exception.
+            throw new AddressNotFoundException("ANF-003","No address by this id");
+        }
+
+        CustomerAddressEntity customerAddressEntity = customerAddressDao.getCustomerAddressByAddress(addressEntity);
+
+        //Checking if the address belong to the customer requested.If no throws corresponding exception.
+        if(customerAddressEntity.getCustomer().getUuid() == customerEntity.getUuid()){
+            return addressEntity;
+        }else{
+            throw new AuthorizationFailedException("ATHR-004","You are not authorized to view/update/delete any one else's address");
         }
 
     }

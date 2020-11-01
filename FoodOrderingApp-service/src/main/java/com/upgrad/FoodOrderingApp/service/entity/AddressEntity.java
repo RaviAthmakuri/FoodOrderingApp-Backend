@@ -12,7 +12,8 @@ import java.util.List;
 @Entity
 @Table(name="address")
 @NamedQueries({
-        @NamedQuery(name="getAddress",query = "select a from AddressEntity a")
+        @NamedQuery(name="getAddress",query = "select a from AddressEntity a"),
+        @NamedQuery(name="getAddressByUUID" , query = "select a from AddressEntity  a where a.uuid= :uuid")
 })
 public class AddressEntity {
 

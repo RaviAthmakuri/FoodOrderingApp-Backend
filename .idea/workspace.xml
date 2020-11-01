@@ -3,7 +3,18 @@
   <component name="ChangeListManager">
     <list default="true" id="2187793b-e64d-48fa-93dc-77d9c32a3738" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FoodOrderingApp-api/src/main/java/com/upgrad/FoodOrderingApp/api/exception/CustomExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/FoodOrderingApp-api/src/main/java/com/upgrad/FoodOrderingApp/api/exception/CustomExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FoodOrderingApp-api/src/main/java/com/upgrad/FoodOrderingApp/api/controller/AddressController.java" beforeDir="false" afterPath="$PROJECT_DIR$/FoodOrderingApp-api/src/main/java/com/upgrad/FoodOrderingApp/api/controller/AddressController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FoodOrderingApp-api/src/main/java/com/upgrad/FoodOrderingApp/api/controller/CategoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/FoodOrderingApp-api/src/main/java/com/upgrad/FoodOrderingApp/api/controller/CategoryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FoodOrderingApp-api/src/test/java/com/upgrad/FoodOrderingApp/api/controller/AddressControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/FoodOrderingApp-api/src/test/java/com/upgrad/FoodOrderingApp/api/controller/AddressControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FoodOrderingApp-service/src/main/java/com/upgrad/FoodOrderingApp/service/businness/AddressService.java" beforeDir="false" afterPath="$PROJECT_DIR$/FoodOrderingApp-service/src/main/java/com/upgrad/FoodOrderingApp/service/businness/AddressService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FoodOrderingApp-service/src/main/java/com/upgrad/FoodOrderingApp/service/businness/CategoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/FoodOrderingApp-service/src/main/java/com/upgrad/FoodOrderingApp/service/businness/CategoryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FoodOrderingApp-service/src/main/java/com/upgrad/FoodOrderingApp/service/businness/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/FoodOrderingApp-service/src/main/java/com/upgrad/FoodOrderingApp/service/businness/CustomerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FoodOrderingApp-service/src/main/java/com/upgrad/FoodOrderingApp/service/dao/AddressDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/FoodOrderingApp-service/src/main/java/com/upgrad/FoodOrderingApp/service/dao/AddressDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FoodOrderingApp-service/src/main/java/com/upgrad/FoodOrderingApp/service/dao/CategoryDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/FoodOrderingApp-service/src/main/java/com/upgrad/FoodOrderingApp/service/dao/CategoryDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FoodOrderingApp-service/src/main/java/com/upgrad/FoodOrderingApp/service/dao/RestaurantCategoryDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/FoodOrderingApp-service/src/main/java/com/upgrad/FoodOrderingApp/service/dao/RestaurantCategoryDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FoodOrderingApp-service/src/main/java/com/upgrad/FoodOrderingApp/service/entity/AddressEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/FoodOrderingApp-service/src/main/java/com/upgrad/FoodOrderingApp/service/entity/AddressEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FoodOrderingApp-service/src/main/java/com/upgrad/FoodOrderingApp/service/entity/CategoryEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/FoodOrderingApp-service/src/main/java/com/upgrad/FoodOrderingApp/service/entity/CategoryEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FoodOrderingApp-service/src/main/java/com/upgrad/FoodOrderingApp/service/entity/RestaurantCategoryEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/FoodOrderingApp-service/src/main/java/com/upgrad/FoodOrderingApp/service/entity/RestaurantCategoryEntity.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -133,7 +144,7 @@
       <command value="mvn clean install -Psetup -DskipTests" />
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.FoodOrderingAppApiApplication">
+  <component name="RunManager" selected="JUnit.AddressControllerTest">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
@@ -142,6 +153,22 @@
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AddressControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="FoodOrderingApp-api" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.upgrad.FoodOrderingApp.api.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.upgrad.FoodOrderingApp.api.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.upgrad.FoodOrderingApp.api.controller.AddressControllerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -163,7 +190,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AddressControllerTest.shouldNotGetAllAddressesWithExpiredSessionUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AddressControllerTest.shouldNotDeleteAddressForWrongCustomer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="FoodOrderingApp-api" />
       <extension name="coverage">
         <pattern>
@@ -173,14 +200,14 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.upgrad.FoodOrderingApp.api.controller" />
       <option name="MAIN_CLASS_NAME" value="com.upgrad.FoodOrderingApp.api.controller.AddressControllerTest" />
-      <option name="METHOD_NAME" value="shouldNotGetAllAddressesWithExpiredSessionUser" />
+      <option name="METHOD_NAME" value="shouldNotDeleteAddressForWrongCustomer" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AddressControllerTest.shouldNotGetAllAddressesWithNonExistingAccessToken" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AddressControllerTest.shouldNotDeleteAddressIfNoAddressPresentAgainstGivenAddressId" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="FoodOrderingApp-api" />
       <extension name="coverage">
         <pattern>
@@ -190,14 +217,14 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.upgrad.FoodOrderingApp.api.controller" />
       <option name="MAIN_CLASS_NAME" value="com.upgrad.FoodOrderingApp.api.controller.AddressControllerTest" />
-      <option name="METHOD_NAME" value="shouldNotGetAllAddressesWithNonExistingAccessToken" />
+      <option name="METHOD_NAME" value="shouldNotDeleteAddressIfNoAddressPresentAgainstGivenAddressId" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AddressControllerTest.shouldNotGetAllAddressesWithSignedOutUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AddressControllerTest.shouldNotDeleteAddressWithExpiredSessionUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="FoodOrderingApp-api" />
       <extension name="coverage">
         <pattern>
@@ -207,7 +234,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.upgrad.FoodOrderingApp.api.controller" />
       <option name="MAIN_CLASS_NAME" value="com.upgrad.FoodOrderingApp.api.controller.AddressControllerTest" />
-      <option name="METHOD_NAME" value="shouldNotGetAllAddressesWithSignedOutUser" />
+      <option name="METHOD_NAME" value="shouldNotDeleteAddressWithExpiredSessionUser" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
@@ -217,19 +244,6 @@
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FoodOrderingAppApiApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="FoodOrderingApp-api" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.upgrad.FoodOrderingApp.api.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.upgrad.FoodOrderingApp.api.FoodOrderingAppApiApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -254,11 +268,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.FoodOrderingAppApiApplication" />
-        <item itemvalue="JUnit.AddressControllerTest.shouldNotGetAllAddressesWithExpiredSessionUser" />
-        <item itemvalue="JUnit.AddressControllerTest.shouldNotGetAllAddressesWithSignedOutUser" />
-        <item itemvalue="JUnit.AddressControllerTest.shouldNotGetAllAddressesWithNonExistingAccessToken" />
+        <item itemvalue="JUnit.AddressControllerTest" />
         <item itemvalue="JUnit.AddressControllerTest.shouldGetAllAddresses" />
+        <item itemvalue="JUnit.AddressControllerTest.shouldNotDeleteAddressForWrongCustomer" />
+        <item itemvalue="JUnit.AddressControllerTest.shouldNotDeleteAddressIfNoAddressPresentAgainstGivenAddressId" />
+        <item itemvalue="JUnit.AddressControllerTest.shouldNotDeleteAddressWithExpiredSessionUser" />
       </list>
     </recent_temporary>
   </component>
@@ -294,7 +308,7 @@
       <workItem from="1545232696710" duration="1008000" />
       <workItem from="1603737051539" duration="14765000" />
       <workItem from="1604138929265" duration="2652000" />
-      <workItem from="1604143680165" duration="15925000" />
+      <workItem from="1604143680165" duration="19941000" />
     </task>
     <servers />
   </component>
@@ -325,58 +339,58 @@
       <screen x="1366" y="-189" width="1920" height="1040" />
     </state>
     <state x="2055" y="108" key="#com.intellij.ide.util.PackageChooserDialog/1366.-189.1920.1040/0.0.1366.728@1366.-189.1920.1040" timestamp="1603739253153" />
-    <state x="2105" y="73" key="FileChooserDialogImpl" timestamp="1604213143229">
+    <state x="2105" y="73" key="FileChooserDialogImpl" timestamp="1604240113664">
       <screen x="1366" y="-189" width="1920" height="1040" />
     </state>
-    <state x="2105" y="73" key="FileChooserDialogImpl/1366.-189.1920.1040/0.0.1366.728@1366.-189.1920.1040" timestamp="1604213143229" />
-    <state width="1877" height="463" key="GridCell.Tab.0.bottom" timestamp="1604220953514">
+    <state x="2105" y="73" key="FileChooserDialogImpl/1366.-189.1920.1040/0.0.1366.728@1366.-189.1920.1040" timestamp="1604240113664" />
+    <state width="1877" height="463" key="GridCell.Tab.0.bottom" timestamp="1604248132939">
       <screen x="1366" y="-189" width="1920" height="1040" />
     </state>
-    <state width="1877" height="463" key="GridCell.Tab.0.bottom/1366.-189.1920.1040/0.0.1366.728@1366.-189.1920.1040" timestamp="1604220953514" />
-    <state width="1877" height="463" key="GridCell.Tab.0.center" timestamp="1604220953514">
+    <state width="1877" height="463" key="GridCell.Tab.0.bottom/1366.-189.1920.1040/0.0.1366.728@1366.-189.1920.1040" timestamp="1604248132939" />
+    <state width="1877" height="463" key="GridCell.Tab.0.center" timestamp="1604248132939">
       <screen x="1366" y="-189" width="1920" height="1040" />
     </state>
-    <state width="1877" height="463" key="GridCell.Tab.0.center/1366.-189.1920.1040/0.0.1366.728@1366.-189.1920.1040" timestamp="1604220953514" />
-    <state width="1877" height="463" key="GridCell.Tab.0.left" timestamp="1604220953514">
+    <state width="1877" height="463" key="GridCell.Tab.0.center/1366.-189.1920.1040/0.0.1366.728@1366.-189.1920.1040" timestamp="1604248132939" />
+    <state width="1877" height="463" key="GridCell.Tab.0.left" timestamp="1604248132939">
       <screen x="1366" y="-189" width="1920" height="1040" />
     </state>
-    <state width="1877" height="463" key="GridCell.Tab.0.left/1366.-189.1920.1040/0.0.1366.728@1366.-189.1920.1040" timestamp="1604220953514" />
-    <state width="1877" height="463" key="GridCell.Tab.0.right" timestamp="1604220953514">
+    <state width="1877" height="463" key="GridCell.Tab.0.left/1366.-189.1920.1040/0.0.1366.728@1366.-189.1920.1040" timestamp="1604248132939" />
+    <state width="1877" height="463" key="GridCell.Tab.0.right" timestamp="1604248132939">
       <screen x="1366" y="-189" width="1920" height="1040" />
     </state>
-    <state width="1877" height="463" key="GridCell.Tab.0.right/1366.-189.1920.1040/0.0.1366.728@1366.-189.1920.1040" timestamp="1604220953514" />
-    <state width="1877" height="463" key="GridCell.Tab.1.bottom" timestamp="1604220953515">
+    <state width="1877" height="463" key="GridCell.Tab.0.right/1366.-189.1920.1040/0.0.1366.728@1366.-189.1920.1040" timestamp="1604248132939" />
+    <state width="1877" height="508" key="GridCell.Tab.1.bottom" timestamp="1604247469575">
       <screen x="1366" y="-189" width="1920" height="1040" />
     </state>
-    <state width="1877" height="463" key="GridCell.Tab.1.bottom/1366.-189.1920.1040/0.0.1366.728@1366.-189.1920.1040" timestamp="1604220953515" />
-    <state width="1877" height="463" key="GridCell.Tab.1.center" timestamp="1604220953515">
+    <state width="1877" height="508" key="GridCell.Tab.1.bottom/1366.-189.1920.1040/0.0.1366.728@1366.-189.1920.1040" timestamp="1604247469575" />
+    <state width="1877" height="508" key="GridCell.Tab.1.center" timestamp="1604247469575">
       <screen x="1366" y="-189" width="1920" height="1040" />
     </state>
-    <state width="1877" height="463" key="GridCell.Tab.1.center/1366.-189.1920.1040/0.0.1366.728@1366.-189.1920.1040" timestamp="1604220953515" />
-    <state width="1877" height="463" key="GridCell.Tab.1.left" timestamp="1604220953515">
+    <state width="1877" height="508" key="GridCell.Tab.1.center/1366.-189.1920.1040/0.0.1366.728@1366.-189.1920.1040" timestamp="1604247469575" />
+    <state width="1877" height="508" key="GridCell.Tab.1.left" timestamp="1604247469575">
       <screen x="1366" y="-189" width="1920" height="1040" />
     </state>
-    <state width="1877" height="463" key="GridCell.Tab.1.left/1366.-189.1920.1040/0.0.1366.728@1366.-189.1920.1040" timestamp="1604220953515" />
-    <state width="1877" height="463" key="GridCell.Tab.1.right" timestamp="1604220953515">
+    <state width="1877" height="508" key="GridCell.Tab.1.left/1366.-189.1920.1040/0.0.1366.728@1366.-189.1920.1040" timestamp="1604247469575" />
+    <state width="1877" height="508" key="GridCell.Tab.1.right" timestamp="1604247469575">
       <screen x="1366" y="-189" width="1920" height="1040" />
     </state>
-    <state width="1877" height="463" key="GridCell.Tab.1.right/1366.-189.1920.1040/0.0.1366.728@1366.-189.1920.1040" timestamp="1604220953515" />
-    <state width="1877" height="508" key="GridCell.Tab.2.bottom" timestamp="1604219418314">
+    <state width="1877" height="508" key="GridCell.Tab.1.right/1366.-189.1920.1040/0.0.1366.728@1366.-189.1920.1040" timestamp="1604247469575" />
+    <state width="1877" height="508" key="GridCell.Tab.2.bottom" timestamp="1604246770128">
       <screen x="1366" y="-189" width="1920" height="1040" />
     </state>
-    <state width="1877" height="508" key="GridCell.Tab.2.bottom/1366.-189.1920.1040/0.0.1366.728@1366.-189.1920.1040" timestamp="1604219418314" />
-    <state width="1877" height="508" key="GridCell.Tab.2.center" timestamp="1604219418313">
+    <state width="1877" height="508" key="GridCell.Tab.2.bottom/1366.-189.1920.1040/0.0.1366.728@1366.-189.1920.1040" timestamp="1604246770128" />
+    <state width="1877" height="508" key="GridCell.Tab.2.center" timestamp="1604246770128">
       <screen x="1366" y="-189" width="1920" height="1040" />
     </state>
-    <state width="1877" height="508" key="GridCell.Tab.2.center/1366.-189.1920.1040/0.0.1366.728@1366.-189.1920.1040" timestamp="1604219418313" />
-    <state width="1877" height="508" key="GridCell.Tab.2.left" timestamp="1604219418313">
+    <state width="1877" height="508" key="GridCell.Tab.2.center/1366.-189.1920.1040/0.0.1366.728@1366.-189.1920.1040" timestamp="1604246770128" />
+    <state width="1877" height="508" key="GridCell.Tab.2.left" timestamp="1604246770128">
       <screen x="1366" y="-189" width="1920" height="1040" />
     </state>
-    <state width="1877" height="508" key="GridCell.Tab.2.left/1366.-189.1920.1040/0.0.1366.728@1366.-189.1920.1040" timestamp="1604219418313" />
-    <state width="1877" height="508" key="GridCell.Tab.2.right" timestamp="1604219418314">
+    <state width="1877" height="508" key="GridCell.Tab.2.left/1366.-189.1920.1040/0.0.1366.728@1366.-189.1920.1040" timestamp="1604246770128" />
+    <state width="1877" height="508" key="GridCell.Tab.2.right" timestamp="1604246770128">
       <screen x="1366" y="-189" width="1920" height="1040" />
     </state>
-    <state width="1877" height="508" key="GridCell.Tab.2.right/1366.-189.1920.1040/0.0.1366.728@1366.-189.1920.1040" timestamp="1604219418314" />
+    <state width="1877" height="508" key="GridCell.Tab.2.right/1366.-189.1920.1040/0.0.1366.728@1366.-189.1920.1040" timestamp="1604246770128" />
     <state x="2022" y="156" key="com.intellij.ide.util.TipDialog" timestamp="1604143678197">
       <screen x="1366" y="-189" width="1920" height="1040" />
     </state>
@@ -406,16 +420,6 @@
           <url>file://$PROJECT_DIR$/FoodOrderingApp-service/src/main/java/com/upgrad/FoodOrderingApp/service/dao/CustomerDao.java</url>
           <line>34</line>
           <option name="timeStamp" value="23" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/FoodOrderingApp-api/src/main/java/com/upgrad/FoodOrderingApp/api/controller/AddressController.java</url>
-          <line>83</line>
-          <option name="timeStamp" value="24" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/FoodOrderingApp-api/src/main/java/com/upgrad/FoodOrderingApp/api/controller/AddressController.java</url>
-          <line>61</line>
-          <option name="timeStamp" value="26" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

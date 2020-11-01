@@ -9,6 +9,7 @@ import com.upgrad.FoodOrderingApp.service.entity.StateEntity;
 import com.upgrad.FoodOrderingApp.service.exception.AddressNotFoundException;
 import com.upgrad.FoodOrderingApp.service.exception.AuthorizationFailedException;
 import com.upgrad.FoodOrderingApp.service.exception.SaveAddressException;
+import org.hibernate.sql.Delete;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
@@ -42,10 +43,9 @@ public class AddressController {
         String[] decodedArray = authorization.split("Bearer ");
         CustomerEntity customerEntity = customerService.getCustomer(decodedArray[1]);
 
-        if(saveAddressRequest.getCity().isEmpty() || saveAddressRequest.getFlatBuildingName().isEmpty()
-        || saveAddressRequest.getLocality().isEmpty() || saveAddressRequest.getPincode().isEmpty())
-        {
-            throw new SaveAddressException("SAR-001","No field can be empty");
+        if (saveAddressRequest.getCity().isEmpty() || saveAddressRequest.getFlatBuildingName().isEmpty()
+                || saveAddressRequest.getLocality().isEmpty() || saveAddressRequest.getPincode().isEmpty()) {
+            throw new SaveAddressException("SAR-001", "No field can be empty");
         }
 
         StateEntity stateEntity = addressService.getStateByUUID(saveAddressRequest.getStateUuid());
@@ -68,7 +68,6 @@ public class AddressController {
         return new ResponseEntity<SaveAddressResponse>(saveAddressResponse, HttpStatus.CREATED);
 
 
-
     }
 
     @RequestMapping(method = RequestMethod.GET
@@ -79,13 +78,13 @@ public class AddressController {
             @RequestHeader("authorization") final String authorization)
             throws AuthorizationFailedException {
 
-                 String[] decodedArray = authorization.split("Bearer ");
-                 CustomerEntity customerEntity = customerService.getCustomer(decodedArray[1]);
+        String[] decodedArray = authorization.split("Bearer ");
+        CustomerEntity customerEntity = customerService.getCustomer(decodedArray[1]);
         List<AddressEntity> addressEntityList = addressService.getAllAddress();
 
         Iterator<AddressEntity> entityIterator = addressEntityList.iterator();
         AddressListResponse addressListResponse = new AddressListResponse();
-        while(entityIterator.hasNext()){
+        while (entityIterator.hasNext()) {
             AddressEntity addressEntity = entityIterator.next();
             AddressList addressList = new AddressList();
             addressList.setCity(addressEntity.getCity());
@@ -100,8 +99,37 @@ public class AddressController {
             addressListResponse.addAddressesItem(addressList);
         }
 
-        return new ResponseEntity<AddressListResponse>(addressListResponse,HttpStatus.OK);
+        return new ResponseEntity<AddressListResponse>(addressListResponse, HttpStatus.OK);
 
+
+    }
+
+
+    @RequestMapping(method = RequestMethod.DELETE
+            , path = "/address/{address_id}"
+            , produces = MediaType.APPLICATION_JSON_UTF8_VALUE
+    )
+    public ResponseEntity<DeleteAddressResponse> deleteAddress(
+            @RequestHeader("authorization") final String authorization
+            , @PathVariable("address_id") String addressId)
+            throws AuthorizationFailedException, AddressNotFoundException {
+
+        String[] decodedArray = authorization.split("Bearer ");
+        CustomerEntity customerEntity = customerService.getCustomer(decodedArray[1]);
+        if (addressId == null) {
+            throw new AddressNotFoundException("ANF-005", "Address id can not be empty");
+        }
+        AddressEntity addressByUUID = addressService.getAddressByUUID(addressId,customerEntity);
+
+        AddressEntity deletedAddress;
+            deletedAddress = addressService.deleteAddress(addressByUUID);
+
+
+        DeleteAddressResponse deleteAddressResponse = new DeleteAddressResponse()
+                .id(deletedAddress.getUuid())
+                .status("ADDRESS DELETED SUCCESSFULLY");
+
+        return new ResponseEntity<DeleteAddressResponse>(deleteAddressResponse, HttpStatus.OK);
 
     }
 

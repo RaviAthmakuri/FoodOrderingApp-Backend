@@ -59,9 +59,7 @@ public class CustomerService {
     }
 
     private boolean isValidMobile(String s) {
-
-        Pattern p = Pattern.compile("[0-9][0-9]{10}");
-
+        Pattern p = Pattern.compile("[0-9]{10}");
         Matcher m = p.matcher(s);
         return (m.find());
     }
@@ -69,20 +67,14 @@ public class CustomerService {
     private static boolean
     isValidPassword(String password) {
 
-        // Regex to check valid password.
         String regex = "^(?=.*[0-9])"
                 + "(?=.*[a-z])(?=.*[A-Z])"
-                + "(?=.*[@#$%^&+=])"
+                + "(?=.*[@#$%^&+=!])"
                 + "(?=\\S+$).{8,20}$";
 
-        // Compile the ReGex
         Pattern p = Pattern.compile(regex);
-
-
-        Matcher m = p.matcher(password);
-
-
-        return m.matches();
+      Matcher m = p.matcher(password);
+      return m.matches();
     }
 
     private CustomerEntity findCustomer(String contactNumber) {
@@ -103,6 +95,7 @@ public class CustomerService {
             customerAuthEntity.setLoginAt(now);
             customerAuthEntity.setUuid(customerEntity.getUuid());
             customerAuthEntity.setCustomer(customerEntity);
+            customerAuthEntity.setExpiresAt(now.plusHours(8L));
             customerAuthEntity.setAccessToken(jwtTokenProvider.generateToken(customerEntity.getUuid(), now, expiresAt));
 
             return customerDao.saveCustomerAuth(customerAuthEntity);
@@ -137,7 +130,7 @@ public class CustomerService {
             throw new AuthorizationFailedException("ATHR-001","Customer is not Logged in.");
         }else if(customerAuthEntity.getLogoutAt() != null){
             throw new AuthorizationFailedException("ATHR-002","Customer is loggedout.Log in again to access this endpoint.");
-        }else if(customerAuthEntity.getExpiresAt().compareTo(now) > 0){
+        }else if(customerAuthEntity.getExpiresAt().compareTo(now) < 0){
             throw new AuthorizationFailedException("ATHR-003","Your session is expired. Log in again to access this endpoint.");
         }
         return customerAuthEntity.getCustomerEntity();

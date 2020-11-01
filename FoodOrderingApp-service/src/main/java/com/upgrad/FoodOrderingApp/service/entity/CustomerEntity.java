@@ -3,6 +3,7 @@ package com.upgrad.FoodOrderingApp.service.entity;
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
+import java.util.List;
 
 @Entity
 @Table(name="customer")
@@ -49,6 +50,18 @@ public class CustomerEntity {
     @NotNull
     @Size(max = 200)
     private String contactNumber;
+
+
+    @ManyToMany(mappedBy = "customerEntityList", cascade = CascadeType.ALL)
+    private List<AddressEntity> addressEntityList;
+
+    public List<AddressEntity> getAddressEntityList() {
+        return addressEntityList;
+    }
+
+    public void setAddressEntityList(List<AddressEntity> addressEntityList) {
+        this.addressEntityList = addressEntityList;
+    }
 
     public Integer getId() {
         return id;

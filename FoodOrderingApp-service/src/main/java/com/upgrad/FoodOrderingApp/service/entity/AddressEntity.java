@@ -1,8 +1,12 @@
 package com.upgrad.FoodOrderingApp.service.entity;
 
 
+import org.hibernate.annotations.OnDelete;
+import org.hibernate.annotations.OnDeleteAction;
+
 import javax.persistence.*;
 import javax.validation.constraints.Size;
+import java.util.List;
 
 @Entity
 @Table(name="address")
@@ -20,9 +24,9 @@ public class AddressEntity {
     @Size(max = 64)
     private String uuid;
 
-    @Column(name="flat_build_number")
+    @Column(name="flat_buil_number")
     @Size(max = 255)
-    private String flatBuildNumber;
+    private String flatBuilNumber;
 
     @Column(name = "locality")
     @Size(max = 255)
@@ -42,7 +46,24 @@ public class AddressEntity {
 
     @ManyToOne
     @JoinColumn(name = "state_id")
+    @OnDelete(action = OnDeleteAction.CASCADE)
     private StateEntity stateEntity;
+
+    @ManyToMany(fetch = FetchType.EAGER , cascade = CascadeType.ALL)
+    @JoinTable(
+            name = "customer_address",
+            joinColumns = {@JoinColumn(name = "customer_id")},
+            inverseJoinColumns = {@JoinColumn(name="address_id")}
+    )
+    private List<CustomerEntity> customerEntityList;
+
+    public List<CustomerEntity> getCustomerEntityList() {
+        return customerEntityList;
+    }
+
+    public void setCustomerEntityList(List<CustomerEntity> customerEntityList) {
+        this.customerEntityList = customerEntityList;
+    }
 
     public Integer getId() {
         return id;
@@ -61,11 +82,11 @@ public class AddressEntity {
     }
 
     public String getFlatBuildNumber() {
-        return flatBuildNumber;
+        return flatBuilNumber;
     }
 
     public void setFlatBuildNumber(String flatBuildNumber) {
-        this.flatBuildNumber = flatBuildNumber;
+        this.flatBuilNumber = flatBuildNumber;
     }
 
     public String getLocality() {

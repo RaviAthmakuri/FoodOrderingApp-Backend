@@ -21,7 +21,7 @@ public class CustomerAuthEntity {
 
 
     @ManyToOne
-    @JoinColumn(name = "user_id")
+    @JoinColumn(name = "customer_id")
     private CustomerEntity customerEntity;
 
     @Column(name = "access_token")

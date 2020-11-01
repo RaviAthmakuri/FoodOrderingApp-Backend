@@ -17,6 +17,20 @@ import java.util.List;
 })
 public class AddressEntity {
 
+    public AddressEntity() {
+    }
+
+    public AddressEntity(String addressId, String s, String someLocality, String someCity, String s1, StateEntity stateEntity)
+    {
+    this.uuid = addressId;
+    this.flatBuilNumber = s;
+    this.locality = someLocality;
+    this.city = someCity;
+    this.stateEntity = stateEntity;
+    this.pincode = s1;
+    }
+
+
     @Id
     @Column(name = "id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -58,6 +72,8 @@ public class AddressEntity {
             inverseJoinColumns = {@JoinColumn(name="customer_id")}
     )
     private List<CustomerEntity> customerEntityList;
+
+
 
     public List<CustomerEntity> getCustomerEntityList() {
         return customerEntityList;

@@ -93,9 +93,9 @@ public class AddressController {
             addressList.setPincode(addressEntity.getPincode());
             AddressListState addressListState = new AddressListState()
                     .stateName(addressEntity.getStateEntity().getStateName())
-                    .id(addressEntity.getStateEntity().getUuid());
+                    .id(UUID.fromString(addressEntity.getStateEntity().getUuid()));
             addressList.setState(addressListState);
-            addressList.setId(addressEntity.getUuid());
+            addressList.setId(UUID.fromString(addressEntity.getUuid()));
             addressListResponse.addAddressesItem(addressList);
         }
 

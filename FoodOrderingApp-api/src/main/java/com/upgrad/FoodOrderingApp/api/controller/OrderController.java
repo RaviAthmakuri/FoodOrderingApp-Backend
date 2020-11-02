@@ -1,6 +1,5 @@
 package com.upgrad.FoodOrderingApp.api.controller;
 
-
 import com.upgrad.FoodOrderingApp.api.model.*;
 import com.upgrad.FoodOrderingApp.service.businness.*;
 import com.upgrad.FoodOrderingApp.service.businness.OrderService;
@@ -11,16 +10,11 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-
 import java.math.BigDecimal;
 import java.sql.Timestamp;
-import java.time.ZonedDateTime;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.UUID;
-
-
-// Order Controller Handles all  the Order related endpoints
 
 @CrossOrigin
 @RestController
@@ -109,7 +103,7 @@ public class OrderController {
                         .id(UUID.fromString(ordersEntity.getAddress().getStateEntity().getUuid()))
                         .stateName(ordersEntity.getAddress().getStateEntity().getStateName());
                 OrderListAddress orderListAddress = new OrderListAddress()
-                        .id(UUID.fromString(ordersEntity.getAddress().getUuid()))
+                        .id(UUID.fromString(String.valueOf(ordersEntity.getAddress().getUuid())))
                         .flatBuildingName(ordersEntity.getAddress().getFlatBuildNumber())
                         .locality(ordersEntity.getAddress().getLocality())
                         .city(ordersEntity.getAddress().getCity())

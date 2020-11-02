@@ -62,7 +62,7 @@ public class AddressController {
         AddressEntity savedAddress = addressService.saveAddress(customerEntity, addressEntity);
 
         SaveAddressResponse saveAddressResponse = new SaveAddressResponse()
-                .id(addressEntity.getUuid())
+                .id(String.valueOf(addressEntity.getUuid()))
                 .status("ADDRESS SUCCESSFULLY REGISTERED");
 
         return new ResponseEntity<SaveAddressResponse>(saveAddressResponse, HttpStatus.CREATED);
@@ -95,7 +95,7 @@ public class AddressController {
                     .stateName(addressEntity.getStateEntity().getStateName())
                     .id(UUID.fromString(addressEntity.getStateEntity().getUuid()));
             addressList.setState(addressListState);
-            addressList.setId(UUID.fromString(addressEntity.getUuid()));
+            addressList.setId(UUID.fromString(String.valueOf(addressEntity.getUuid())));
             addressListResponse.addAddressesItem(addressList);
         }
 

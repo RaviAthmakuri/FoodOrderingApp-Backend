@@ -3,19 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="2187793b-e64d-48fa-93dc-77d9c32a3738" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FoodOrderingApp-api/src/main/java/com/upgrad/FoodOrderingApp/api/controller/AddressController.java" beforeDir="false" afterPath="$PROJECT_DIR$/FoodOrderingApp-api/src/main/java/com/upgrad/FoodOrderingApp/api/controller/AddressController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FoodOrderingApp-api/src/main/java/com/upgrad/FoodOrderingApp/api/controller/CategoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/FoodOrderingApp-api/src/main/java/com/upgrad/FoodOrderingApp/api/controller/CategoryController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FoodOrderingApp-api/src/main/java/com/upgrad/FoodOrderingApp/api/exception/CustomExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/FoodOrderingApp-api/src/main/java/com/upgrad/FoodOrderingApp/api/exception/CustomExceptionHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FoodOrderingApp-api/src/test/java/com/upgrad/FoodOrderingApp/api/controller/CategoryControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/FoodOrderingApp-api/src/test/java/com/upgrad/FoodOrderingApp/api/controller/CategoryControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FoodOrderingApp-api/src/test/java/com/upgrad/FoodOrderingApp/api/controller/OrderControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/FoodOrderingApp-api/src/test/java/com/upgrad/FoodOrderingApp/api/controller/OrderControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FoodOrderingApp-api/src/test/java/com/upgrad/FoodOrderingApp/api/controller/PaymentControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/FoodOrderingApp-api/src/test/java/com/upgrad/FoodOrderingApp/api/controller/PaymentControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FoodOrderingApp-service/src/main/java/com/upgrad/FoodOrderingApp/service/businness/AddressService.java" beforeDir="false" afterPath="$PROJECT_DIR$/FoodOrderingApp-service/src/main/java/com/upgrad/FoodOrderingApp/service/businness/AddressService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FoodOrderingApp-service/src/main/java/com/upgrad/FoodOrderingApp/service/businness/CategoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/FoodOrderingApp-service/src/main/java/com/upgrad/FoodOrderingApp/service/businness/CategoryService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FoodOrderingApp-service/src/main/java/com/upgrad/FoodOrderingApp/service/dao/CategoryDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/FoodOrderingApp-service/src/main/java/com/upgrad/FoodOrderingApp/service/dao/CategoryDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FoodOrderingApp-service/src/main/java/com/upgrad/FoodOrderingApp/service/dao/RestaurantCategoryDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/FoodOrderingApp-service/src/main/java/com/upgrad/FoodOrderingApp/service/dao/RestaurantCategoryDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FoodOrderingApp-service/src/main/java/com/upgrad/FoodOrderingApp/service/entity/AddressEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/FoodOrderingApp-service/src/main/java/com/upgrad/FoodOrderingApp/service/entity/AddressEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FoodOrderingApp-service/src/main/java/com/upgrad/FoodOrderingApp/service/entity/CategoryEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/FoodOrderingApp-service/src/main/java/com/upgrad/FoodOrderingApp/service/entity/CategoryEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FoodOrderingApp-service/src/main/java/com/upgrad/FoodOrderingApp/service/entity/RestaurantCategoryEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/FoodOrderingApp-service/src/main/java/com/upgrad/FoodOrderingApp/service/entity/RestaurantCategoryEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FoodOrderingApp-service/src/main/java/com/upgrad/FoodOrderingApp/service/entity/CustomerEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/FoodOrderingApp-service/src/main/java/com/upgrad/FoodOrderingApp/service/entity/CustomerEntity.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,7 +98,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550834160886" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/FoodOrderingApp-api/src/main/java/com/upgrad/FoodOrderingApp/api/controller" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="E:/FoodOrderingAppBackend-STUB" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
@@ -145,7 +133,7 @@
       <command value="mvn clean install -Psetup -DskipTests" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.PaymentControllerTest.shouldGetAllPaymentMethods">
+  <component name="RunManager" selected="Spring Boot.FoodOrderingAppApiApplication">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
@@ -264,11 +252,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.FoodOrderingAppApiApplication" />
         <item itemvalue="JUnit.PaymentControllerTest.shouldGetAllPaymentMethods" />
         <item itemvalue="JUnit.OrderControllerTest" />
         <item itemvalue="JUnit.CategoryControllerTest" />
         <item itemvalue="JUnit.CategoryControllerTest.shouldNotGetAnyCategoryOrderedByNameIfItDoesNotExists" />
-        <item itemvalue="Spring Boot.FoodOrderingAppApiApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -336,41 +324,50 @@
       <screen x="1366" y="-189" width="1920" height="1040" />
     </state>
     <state x="2055" y="108" key="#com.intellij.ide.util.PackageChooserDialog/1366.-189.1920.1040/0.0.1366.728@1366.-189.1920.1040" timestamp="1603739253153" />
-    <state x="2105" y="73" key="FileChooserDialogImpl" timestamp="1604240113664">
-      <screen x="1366" y="-189" width="1920" height="1040" />
+    <state x="526" y="183" key="FileChooserDialogImpl" timestamp="1604323342778">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state x="526" y="183" key="FileChooserDialogImpl/1366.-189.1920.1040/0.0.1366.728@0.0.1366.728" timestamp="1604323342778" />
     <state x="2105" y="73" key="FileChooserDialogImpl/1366.-189.1920.1040/0.0.1366.728@1366.-189.1920.1040" timestamp="1604240113664" />
-    <state width="1877" height="463" key="GridCell.Tab.0.bottom" timestamp="1604250682258">
-      <screen x="1366" y="-189" width="1920" height="1040" />
+    <state width="1323" height="300" key="GridCell.Tab.0.bottom" timestamp="1604323233295">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state width="1323" height="300" key="GridCell.Tab.0.bottom/1366.-189.1920.1040/0.0.1366.728@0.0.1366.728" timestamp="1604323233295" />
     <state width="1877" height="463" key="GridCell.Tab.0.bottom/1366.-189.1920.1040/0.0.1366.728@1366.-189.1920.1040" timestamp="1604250682258" />
-    <state width="1877" height="463" key="GridCell.Tab.0.center" timestamp="1604250682258">
-      <screen x="1366" y="-189" width="1920" height="1040" />
+    <state width="1323" height="300" key="GridCell.Tab.0.center" timestamp="1604323233294">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state width="1323" height="300" key="GridCell.Tab.0.center/1366.-189.1920.1040/0.0.1366.728@0.0.1366.728" timestamp="1604323233294" />
     <state width="1877" height="463" key="GridCell.Tab.0.center/1366.-189.1920.1040/0.0.1366.728@1366.-189.1920.1040" timestamp="1604250682258" />
-    <state width="1877" height="463" key="GridCell.Tab.0.left" timestamp="1604250682258">
-      <screen x="1366" y="-189" width="1920" height="1040" />
+    <state width="1323" height="300" key="GridCell.Tab.0.left" timestamp="1604323233294">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state width="1323" height="300" key="GridCell.Tab.0.left/1366.-189.1920.1040/0.0.1366.728@0.0.1366.728" timestamp="1604323233294" />
     <state width="1877" height="463" key="GridCell.Tab.0.left/1366.-189.1920.1040/0.0.1366.728@1366.-189.1920.1040" timestamp="1604250682258" />
-    <state width="1877" height="463" key="GridCell.Tab.0.right" timestamp="1604250682258">
-      <screen x="1366" y="-189" width="1920" height="1040" />
+    <state width="1323" height="300" key="GridCell.Tab.0.right" timestamp="1604323233295">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state width="1323" height="300" key="GridCell.Tab.0.right/1366.-189.1920.1040/0.0.1366.728@0.0.1366.728" timestamp="1604323233295" />
     <state width="1877" height="463" key="GridCell.Tab.0.right/1366.-189.1920.1040/0.0.1366.728@1366.-189.1920.1040" timestamp="1604250682258" />
-    <state width="1877" height="508" key="GridCell.Tab.1.bottom" timestamp="1604249961346">
-      <screen x="1366" y="-189" width="1920" height="1040" />
+    <state width="1323" height="300" key="GridCell.Tab.1.bottom" timestamp="1604323233295">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state width="1323" height="300" key="GridCell.Tab.1.bottom/1366.-189.1920.1040/0.0.1366.728@0.0.1366.728" timestamp="1604323233295" />
     <state width="1877" height="508" key="GridCell.Tab.1.bottom/1366.-189.1920.1040/0.0.1366.728@1366.-189.1920.1040" timestamp="1604249961346" />
-    <state width="1877" height="508" key="GridCell.Tab.1.center" timestamp="1604249961346">
-      <screen x="1366" y="-189" width="1920" height="1040" />
+    <state width="1323" height="300" key="GridCell.Tab.1.center" timestamp="1604323233295">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state width="1323" height="300" key="GridCell.Tab.1.center/1366.-189.1920.1040/0.0.1366.728@0.0.1366.728" timestamp="1604323233295" />
     <state width="1877" height="508" key="GridCell.Tab.1.center/1366.-189.1920.1040/0.0.1366.728@1366.-189.1920.1040" timestamp="1604249961346" />
-    <state width="1877" height="508" key="GridCell.Tab.1.left" timestamp="1604249961346">
-      <screen x="1366" y="-189" width="1920" height="1040" />
+    <state width="1323" height="300" key="GridCell.Tab.1.left" timestamp="1604323233295">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state width="1323" height="300" key="GridCell.Tab.1.left/1366.-189.1920.1040/0.0.1366.728@0.0.1366.728" timestamp="1604323233295" />
     <state width="1877" height="508" key="GridCell.Tab.1.left/1366.-189.1920.1040/0.0.1366.728@1366.-189.1920.1040" timestamp="1604249961346" />
-    <state width="1877" height="508" key="GridCell.Tab.1.right" timestamp="1604249961346">
-      <screen x="1366" y="-189" width="1920" height="1040" />
+    <state width="1323" height="300" key="GridCell.Tab.1.right" timestamp="1604323233295">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state width="1323" height="300" key="GridCell.Tab.1.right/1366.-189.1920.1040/0.0.1366.728@0.0.1366.728" timestamp="1604323233295" />
     <state width="1877" height="508" key="GridCell.Tab.1.right/1366.-189.1920.1040/0.0.1366.728@1366.-189.1920.1040" timestamp="1604249961346" />
     <state width="1877" height="508" key="GridCell.Tab.2.bottom" timestamp="1604246770128">
       <screen x="1366" y="-189" width="1920" height="1040" />

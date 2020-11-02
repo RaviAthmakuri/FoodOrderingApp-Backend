@@ -95,7 +95,7 @@ public class AddressController {
                     .stateName(addressEntity.getStateEntity().getStateName())
                     .id(UUID.fromString(addressEntity.getStateEntity().getUuid()));
             addressList.setState(addressListState);
-            addressList.setId(UUID.fromString(String.valueOf(addressEntity.getUuid())));
+            addressList.setId(UUID.fromString(addressEntity.getUuid()));
             addressListResponse.addAddressesItem(addressList);
         }
 
@@ -126,7 +126,7 @@ public class AddressController {
 
 
         DeleteAddressResponse deleteAddressResponse = new DeleteAddressResponse()
-                .id(deletedAddress.getUuid())
+                .id(UUID.fromString(deletedAddress.getUuid()))
                 .status("ADDRESS DELETED SUCCESSFULLY");
 
         return new ResponseEntity<DeleteAddressResponse>(deleteAddressResponse, HttpStatus.OK);

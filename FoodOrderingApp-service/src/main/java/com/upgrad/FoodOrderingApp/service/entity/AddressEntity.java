@@ -65,7 +65,7 @@ public class AddressEntity {
     @OnDelete(action = OnDeleteAction.CASCADE)
     private StateEntity stateEntity;
 
-    @ManyToMany(fetch = FetchType.EAGER , cascade = CascadeType.ALL)
+    @ManyToMany(fetch = FetchType.EAGER)
     @JoinTable(
             name = "customer_address",
             joinColumns = {@JoinColumn(name = "address_id")},
@@ -89,8 +89,8 @@ public class AddressEntity {
         this.id = id;
     }
 
-    public UUID getUuid() {
-        return UUID.fromString(uuid);
+    public String getUuid() {
+        return uuid;
     }
 
     public void setUuid(String uuid) {

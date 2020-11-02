@@ -8,6 +8,7 @@ import org.springframework.transaction.annotation.Transactional;
 import javax.persistence.EntityManager;
 import javax.persistence.NoResultException;
 import javax.persistence.PersistenceContext;
+import javax.swing.plaf.nimbus.State;
 import java.util.List;
 
 @Repository
@@ -66,5 +67,16 @@ public class AddressDao {
 
     public void deleteAddress(AddressEntity addressByUUID) {
          entityManager.remove(addressByUUID);
+    }
+
+    public List<StateEntity> getAllStates() {
+        try {
+            List<StateEntity> stateEntityList = entityManager.createNamedQuery("getStates", StateEntity.class)
+                    .getResultList();
+            return stateEntityList;
+        } catch (NoResultException nre) {
+            return null;
+        }
+
     }
 }

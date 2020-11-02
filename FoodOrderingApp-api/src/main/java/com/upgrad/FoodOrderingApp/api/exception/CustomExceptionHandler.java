@@ -97,4 +97,12 @@ public class CustomExceptionHandler {
         return new ResponseEntity<ErrorResponse>(
                 new ErrorResponse().code(exc.getCode()).message(exc.getErrorMessage()), HttpStatus.NOT_FOUND);
     }
+
+    @ExceptionHandler(InvalidRatingException.class)
+    public ResponseEntity<ErrorResponse> invalidRatingException(
+            InvalidRatingException exc, WebRequest webRequest
+    ){
+        return new ResponseEntity<ErrorResponse>(
+                new ErrorResponse().code(exc.getCode()).message(exc.getErrorMessage()), HttpStatus.BAD_REQUEST);
+    }
 }

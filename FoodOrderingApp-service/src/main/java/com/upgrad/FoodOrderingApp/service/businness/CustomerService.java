@@ -25,7 +25,7 @@ public class CustomerService {
 
     public CustomerEntity saveCustomer(CustomerEntity customerEntity) throws SignUpRestrictedException {
         if(findCustomer(customerEntity.getContactNumber()) != null){
-            throw new SignUpRestrictedException("ATH-001","This contact number has not been registered");
+            throw new SignUpRestrictedException("SGR-001","This contact number is already registered! Try other contact number.");
         }else if (!isValidEmail(customerEntity.getEmail())) {
             throw new SignUpRestrictedException("SGR-002", "Invalid email-id format!");
         } else if (!isValidMobile(customerEntity.getContactNumber())) {
@@ -58,7 +58,7 @@ public class CustomerService {
     }
 
     private boolean isValidMobile(String s) {
-        Pattern p = Pattern.compile("[0-9]{10}");
+        Pattern p = Pattern.compile("^\\d{10}$");
         Matcher m = p.matcher(s);
         return (m.find());
     }
@@ -112,7 +112,7 @@ public class CustomerService {
             throw new AuthorizationFailedException("ATHR-001","Customer is not Logged in.");
         }else if(customerAuthEntity.getLogoutAt() != null){
             throw new AuthorizationFailedException("ATHR-002","Customer is loggedout.Log in again to access this endpoint.");
-        }else if(customerAuthEntity.getExpiresAt().compareTo(now) > 0){
+        }else if(customerAuthEntity.getExpiresAt().compareTo(now) < 0){
             throw new AuthorizationFailedException("ATHR-003","Your session is expired. Log in again to access this endpoint.");
         }
 

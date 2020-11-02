@@ -12,6 +12,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 
+import javax.swing.plaf.nimbus.State;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
@@ -115,4 +116,7 @@ public class AddressService {
     }
 
 
+    public List<StateEntity> getAllStates() {
+        return addressDAO.getAllStates();
+    }
 }

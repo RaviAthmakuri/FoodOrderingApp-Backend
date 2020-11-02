@@ -1,18 +1,10 @@
 package com.upgrad.FoodOrderingApp.service.businness;
-
 import com.upgrad.FoodOrderingApp.service.common.UtilityProvider;
-import com.upgrad.FoodOrderingApp.service.dao.ItemDao;
-import com.upgrad.FoodOrderingApp.service.dao.OrderDao;
-import com.upgrad.FoodOrderingApp.service.dao.OrderItemDao;
-import com.upgrad.FoodOrderingApp.service.dao.RestaurantDao;
-import com.upgrad.FoodOrderingApp.service.entity.ItemEntity;
-import com.upgrad.FoodOrderingApp.service.entity.OrderItemEntity;
-import com.upgrad.FoodOrderingApp.service.entity.OrdersEntity;
-import com.upgrad.FoodOrderingApp.service.entity.RestaurantEntity;
+import com.upgrad.FoodOrderingApp.service.dao.*;
+import com.upgrad.FoodOrderingApp.service.entity.*;
 import com.upgrad.FoodOrderingApp.service.exception.ItemNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
 import java.util.*;
 
 @Service
@@ -22,10 +14,19 @@ public class ItemService {
     ItemDao itemDao;
 
     @Autowired
+    CategoryDao categoryDao;
+
+    @Autowired
     RestaurantDao restaurantDao;
 
     @Autowired
+    RestaurantItemDao restaurantItemDao;
+
+    @Autowired
     OrderItemDao orderItemDao;
+
+    @Autowired
+    CategoryItemDao categoryItemDao;
 
     @Autowired
     OrderDao orderDao;
@@ -33,13 +34,9 @@ public class ItemService {
     @Autowired
     UtilityProvider utilityProvider;
 
-
     public List<ItemEntity> getItemsByPopularity(RestaurantEntity restaurantEntity) {
-
         List <OrdersEntity> ordersEntities = orderDao.getOrdersByRestaurant(restaurantEntity);
-
         List <ItemEntity> itemEntities = new LinkedList<>();
-
         ordersEntities.forEach(ordersEntity -> {
             List <OrderItemEntity> orderItemEntities = orderItemDao.getItemsByOrders(ordersEntity);
             orderItemEntities.forEach(orderItemEntity -> { //Looping in to get each tem from the OrderItemEntity.
@@ -71,5 +68,21 @@ public class ItemService {
             throw new ItemNotFoundException("INF-003","No item by this id exist");
         }
         return itemEntity;
+    }
+
+    public List<ItemEntity> getItemsByCategoryAndRestaurant(String restaurantUuid, String categoryUuid) {
+        RestaurantEntity restaurantEntity = restaurantDao.getRestaurantByUuid(restaurantUuid);
+        CategoryEntity categoryEntity = categoryDao.getCategoryByUuid(categoryUuid);
+        List<RestaurantItemEntity> restaurantItemEntities = restaurantItemDao.getItemsByRestaurant(restaurantEntity);
+        List<CategoryItemEntity> categoryItemEntities = categoryItemDao.getItemsByCategory(categoryEntity);
+        List<ItemEntity> itemEntities = new LinkedList<>();
+        restaurantItemEntities.forEach(restaurantItemEntity -> {
+            categoryItemEntities.forEach(categoryItemEntity -> {
+                if(restaurantItemEntity.getItem().equals(categoryItemEntity.getItem())){
+                    itemEntities.add(restaurantItemEntity.getItem());
+                }
+            });
+        });
+        return itemEntities;
     }
 }

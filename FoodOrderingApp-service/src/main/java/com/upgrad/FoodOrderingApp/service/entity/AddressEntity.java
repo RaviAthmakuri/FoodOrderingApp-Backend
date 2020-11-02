@@ -8,6 +8,7 @@ import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 import java.util.List;
+import java.util.UUID;
 
 @Entity
 @Table(name="address")
@@ -29,7 +30,6 @@ public class AddressEntity {
     this.stateEntity = stateEntity;
     this.pincode = s1;
     }
-
 
     @Id
     @Column(name = "id")
@@ -73,8 +73,6 @@ public class AddressEntity {
     )
     private List<CustomerEntity> customerEntityList;
 
-
-
     public List<CustomerEntity> getCustomerEntityList() {
         return customerEntityList;
     }
@@ -91,8 +89,8 @@ public class AddressEntity {
         this.id = id;
     }
 
-    public String getUuid() {
-        return uuid;
+    public UUID getUuid() {
+        return UUID.fromString(uuid);
     }
 
     public void setUuid(String uuid) {

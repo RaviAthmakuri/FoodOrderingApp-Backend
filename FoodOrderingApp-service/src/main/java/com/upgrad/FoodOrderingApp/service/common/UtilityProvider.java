@@ -30,5 +30,14 @@ public class UtilityProvider {
         return sortedByValueMap;
     }
 
+    public boolean isValidCustomerRating(String cutomerRating){
+        if(cutomerRating.equals("5.0")){
+            return true;
+        }
+        Pattern p = Pattern.compile("[1-4].[0-9]");
+        Matcher m = p.matcher(cutomerRating);
+        return (m.find() && m.group().equals(cutomerRating));
+    }
+
 }
 
